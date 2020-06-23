@@ -1,2 +1,2 @@
-# CSS_Portfolio
-Files that contains my CSS Portfolio from a LinkedIn Learning course
+# Technical_Training
+Files that contains my tips/past projects from online training including LinkedIn Learning courses.
