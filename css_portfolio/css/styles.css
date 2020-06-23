@@ -1,0 +1,205 @@
+/*
+COLOR PALETTE
+https://coolors.co/3d5a80-ffffff-fb3640-080705-293241
+#3D5A80 - Bdazzled Blue
+#F7FFF7 - Almost White
+#FB3640 - Red Salsa
+#080705 - Rich Black FOGRA 39
+#293241 - Gunmetal
+#D9E5D6 - Honeydew
+ */
+
+/* Global styles
+------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+} /* This should be added to all HTML/CSS projects */
+
+body{
+  color: #293241;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+
+}
+
+img {
+  width: 300px;
+}
+
+a{
+  color: #3D5A80;
+}
+
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-size: 75px;
+  line-height: 1;
+}
+h2 {
+  font-size: 45px;
+}
+h3 {
+  font-size: 18px;
+  font-style: italic;
+}
+
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  margin: 0;
+}
+
+h3 + p {
+  font-style: italic;
+}
+h3 ~ p {
+  margin: 0;
+}
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.divider > section {
+  border-bottom: 1px dashed #FB3640;
+  padding: 25px 0;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+/*  Profile
+----------------------------- */
+/* Since there is only one header in the file,
+we can just use header instead of classes or narrowing down specific */
+header {
+  background: #3D5A80;
+  color: #F7FFF7;
+}
+header h3 {
+  margin-top:0;
+  font-size: 30px;
+}
+
+
+/*  Projects
+----------------------------- */
+.projects {
+  background: #F7FFF7;
+}
+/* .projects a {
+} */
+
+.projects .btn {
+  color: #F7FFF7;
+  background: #2F3061;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.projects .btn:hover {
+  background: rgba(47, 48, 97, 80%)
+}
+.project-item{
+  overflow: hidden;
+}
+.project-item h3 {
+  margin-top: 0;
+}
+
+/* Work Experience
+------------------------------*/
+.work_experience {
+  background: #293241;
+  color: #F7FFF7;
+}
+.work_experience a{
+  color: #FB3640;
+}
+
+/* Education
+------------------------------*/
+.education p {
+  color: #3D5A80;
+}
+
+.education {
+  background-image: url(../images/sharon-mccutcheon-unsplash.jpg);
+  background-size: cover;
+  padding-bottom: 100px;
+}
+.education p {
+  width: 75%;
+}
+.education h3 {
+  margin-bottom: 5px;
+  width: 75%;
+}
+
+/* Contact Info
+------------------------------*/
+footer{
+  background: #D9E5D6;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
+
+/* Responsive
+------------------------------*/
+@media screen and (min-width: 725px){
+  header, footer, h2 {
+      text-align: center;
+  }
+
+  .contact-list {
+      display: flex;
+      justify-content: center;
+  }
+
+  .project-item img{
+    float: left;
+    margin-right: 20px;
+  }
+
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 724px){
+  h1 {
+    font-size: 55px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  header h3, h3 {
+    font-size: 20px;
+  }
+  h1, h2 {
+    line-height: 1;
+  }
+  .contact-list a {
+    padding: 5px;
+  }
+}
